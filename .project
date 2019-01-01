@@ -1,0 +1,24 @@
+# Gambas Project File 3.0
+Title=RecortesDeRajoy
+Startup=FMain
+Icon=transparente.png
+Version=0.0.4
+Component=gb.image
+Component=gb.gui.qt
+Component=gb.form
+Component=gb.settings
+Description="Recortar un trozo a elegir de tu escritorio"
+TabSize=2
+Translate=1
+Language=es_ES
+Maintainer=jsbsan
+Address=jusabejusabe@hotmail.com
+Url=jsbsan.blogspot.com
+License=General Public License
+PackageName=recortes-0.0.4
+CreateEachDirectory=1
+Packager=1
+Systems=debian
+Menus=debian:"Applications/Graphics"
+Categories=debian:"Graphics"
+Groups=debian:"graphics"

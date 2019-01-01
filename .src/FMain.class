@@ -1,0 +1,50 @@
+' Gambas class file
+
+''nota:
+'Es necesario tener instalado imagemagik:
+''sudo apt-get install imagemagick
+
+Public Sub _new()
+
+End
+
+Public Sub Form_Open()
+
+  CheckBoxAbrir.value = settings["usargpicview", True]
+  Me.Caption = "recortes"
+  Me.center
+
+End
+
+Public Sub ToolButton1_Click()
+
+  Me.opacity = 0
+  Timer1.Delay = ValueBox1.value
+  Timer1.Start()
+
+End
+
+Public Sub Timer1_Timer()
+
+  Dim comando As String
+  'espero los segundo que me han dado en el valuebox, capturo imagen, la abro con el programa gpicview
+  comando = "sleep " & ValueBox1.Value & "; import /tmp/captura.png"
+  Shell comando Wait
+  Timer1.Stop()
+  Me.Opacity = 100
+  Wait 0.05
+  PictureBox1.Picture = Picture.Load("/tmp/captura.png")
+
+  Wait 0.05
+  Clipboard.Copy(PictureBox1.Picture.image)
+  If CheckBoxAbrir.value = True Then
+    Shell "gpicview /tmp/captura.png"
+  Endif
+
+End
+
+Public Sub Form_Close()
+
+  settings["usargpicview"] = CheckBoxAbrir.value
+
+End
