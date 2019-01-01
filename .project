@@ -1,5 +1,5 @@
 # Gambas Project File 3.0
-Title=RecortesDeRajoy
+Title=recortes
 Startup=FMain
 Icon=transparente.png
 Version=0.0.4
@@ -7,7 +7,8 @@ Component=gb.image
 Component=gb.gui.qt
 Component=gb.form
 Component=gb.settings
-Description="Recortar un trozo a elegir de tu escritorio"
+Description="Recortar un trozo a elegir de tu escritorio y guardarlo en el portapapeles y en un fichero de imagen"
+Authors="Julio Sanchez Berro"
 TabSize=2
 Translate=1
 Language=es_ES
