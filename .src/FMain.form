@@ -3,7 +3,7 @@
 { Form Form
   MoveScaled(0,0,35,7)
   Background = &H00C000&
-  Icon = Picture["transparente.png"]
+  Icon = Picture["tijeras2.png"]
   Resizable = False
   { ToolButton1 ToolButton
     MoveScaled(2,1,8,6)

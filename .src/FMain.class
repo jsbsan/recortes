@@ -10,6 +10,13 @@ End
 
 Public Sub Form_Open()
 
+  'comprobar que no hay otra copia en ejecución...
+  If ModuleMeEjecuto.MeEjecuto() Then
+    'me estoy ejecutando y cierro esta instancia...
+    Me.Close()
+    Return
+  Endif
+
   CheckBoxAbrir.value = settings["usargpicview", True]
   Me.Caption = "recortes"
   Me.center

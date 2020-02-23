@@ -1,8 +1,8 @@
 # Gambas Project File 3.0
 Title=recortes
 Startup=FMain
-Icon=transparente.png
-Version=0.0.4
+Icon=tijeras2.png
+Version=0.0.5
 Component=gb.image
 Component=gb.gui.qt
 Component=gb.form
@@ -16,7 +16,7 @@ Maintainer=jsbsan
 Address=jusabejusabe@hotmail.com
 Url=jsbsan.blogspot.com
 License=General Public License
-PackageName=recortes-0.0.4
+PackageName=recortes-0.0.5
 CreateEachDirectory=1
 Packager=1
 Systems=debian
